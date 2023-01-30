@@ -7,7 +7,7 @@ Minecraft plugin for Faction servers
 # Features
 
 - Give dynamite be yourself (/dynamite)
-- Give a player (/dynamite give <players>
+- Give a player (/dynamite give [players]
  
 # Contact me
 Discord : 𝓦𝓪𝓻𝓭𝒆𝓷#9061
