@@ -1,0 +1,9 @@
+name: Dynamite
+version: 0.0.1
+description: Faction - Dynamite
+main: fr.ward.dynamite.Dynamite
+author: Ward
+commands:
+  dynamite:
+    description: Give dynamite
+    usage: /dynamite
