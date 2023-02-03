@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="dynamite:jar">
+    <output-path>$PROJECT_DIR$/../../Minecraft Server Jar/1.8/plugins</output-path>
+    <root id="archive" name="dynamite.jar">
+      <element id="module-output" name="dynamite" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

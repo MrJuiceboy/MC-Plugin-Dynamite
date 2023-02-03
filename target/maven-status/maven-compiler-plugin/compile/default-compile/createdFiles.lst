@@ -1,3 +1,4 @@
-fr\ward\dynamite\DynamiteCommand.class
 fr\ward\dynamite\Dynamite.class
-fr\ward\dynamite\DynamiteListener.class
+fr\ward\dynamite\commands\DynamiteCommand.class
+fr\ward\dynamite\listeners\DynamiteListener.class
+fr\ward\dynamite\utils\MineMojang.class

@@ -1,8 +1,11 @@
 package fr.ward.dynamite;
 
+import fr.ward.dynamite.commands.DynamiteCommand;
+import fr.ward.dynamite.listeners.DynamiteListener;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -17,7 +20,7 @@ public class Dynamite extends JavaPlugin {
     public static Dynamite getInstance() {
         return INSTANCE;
     }
-    public String getDynamiteName() {
+    public String getPrefix() {
         return "§7[§cDynamite§7]";
     }
 
@@ -47,12 +50,22 @@ public class Dynamite extends JavaPlugin {
         super.onDisable();
     }
 
-    private ItemStack itemStack() {
-        final String name = getDynamiteName();
+    /*private ItemStack itemStack() {
+        final String name = getPrefix();
         final ItemStack dynamite = new ItemStack(Material.BLAZE_ROD);
-        ItemMeta metaDynamite = dynamite.getItemMeta();
+        final ItemMeta metaDynamite = dynamite.getItemMeta();
         metaDynamite.setDisplayName(name);
         dynamite.setItemMeta(metaDynamite);
         return dynamite;
+    }*/
+
+    private ItemStack itemStack() {
+        final String name = getPrefix();
+        final ItemStack skull = new ItemStack(Material.SKULL_ITEM, 1, (byte) 3);
+        final SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        skullMeta.setDisplayName(name);
+        skullMeta.setOwner("MHF_TNT2");
+        skull.setItemMeta(skullMeta);
+        return skull;
     }
 }

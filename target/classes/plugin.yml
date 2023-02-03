@@ -7,3 +7,4 @@ commands:
   dynamite:
     description: Give dynamite
     usage: /dynamite
+    aliases: [dyn]
